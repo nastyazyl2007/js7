@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="utf-8">
+    <TITLE>Пример 63</title>
+    </HEAD>
+    <BODY>
+       <script type = "text/javascript">
+        let clientId = prompt(' Введите сюда значение clientId:', "");
+         function createOAuthString(host, clientId, scope) { 
+         return `${host}/login/oauth/authorize?client_id=${clientId}&scope=${scope}` } ;
+         console.log (createOAuthString('https://github.com', 'fufaev', 'repo,user'));
+         </script>
+    </BODY>
+    </HTML>
